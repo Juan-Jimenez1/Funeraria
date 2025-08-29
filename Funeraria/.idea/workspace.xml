@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df882719-e6b8-46c5-9c87-644800da8003" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/model/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/model/Empleado.java" afterDir="false" />
-    </list>
+    <list default="true" id="df882719-e6b8-46c5-9c87-644800da8003" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +65,7 @@
       <updated>1756426184811</updated>
       <workItem from="1756426186419" duration="2659000" />
       <workItem from="1756468682450" duration="1101000" />
+      <workItem from="1756470070930" duration="253000" />
     </task>
     <task id="LOCAL-00001" summary="Se cambia el nombre de la clase para expresar mejor claridad">
       <option name="closed" value="true" />
