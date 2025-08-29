@@ -13,9 +13,24 @@ public class Empleado extends Persona {
 
     //-----------------------------------
 
+
+    public String getSueldo() {
+        return sueldo;
+    }
+
+    public TipoCargo getTipoCargo() {
+        return tipoCargo;
+    }
+    public void setSueldo(String sueldo) {
+        this.sueldo = sueldo;
+    }
+    public void setTipoCargo(TipoCargo tipoCargo) {
+        this.tipoCargo = tipoCargo;
+    }
+
     @Override
     public String toString() {
-        return "Empleado{" +
+        return super.toString() +
                 "sueldo='" + sueldo + '\'' +
                 ", tipoCargo=" + tipoCargo +
                 '}';
