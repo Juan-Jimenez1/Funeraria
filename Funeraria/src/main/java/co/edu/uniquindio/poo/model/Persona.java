@@ -50,4 +50,11 @@ public class Persona {
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public static class Builder{
+        private String nombre;
+        private String apellido;
+        private String email;
+        private LocalDate fechaNacimiento;
+    }
 }
