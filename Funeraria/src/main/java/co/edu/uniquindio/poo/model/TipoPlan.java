@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
-public enum TipoPlan {
+public enum TipoServicio {
     POBRE,
     LUXURY,
     PREMIUM;
