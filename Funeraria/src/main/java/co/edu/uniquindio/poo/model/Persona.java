@@ -5,8 +5,19 @@ import java.time.LocalDate;
 public class Persona {
     private String nombre;
     private String apellido;
+    private String identificacion;
     private String email;
     private LocalDate fechaNacimiento;
+
+     //Protected para poder acceder al constructor desde las clases hijas.
+    protected Persona(String nombre, String apellido, String identificacion, String email, LocalDate fechaNacimiento) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.identificacion = identificacion;
+        this.email = email;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
 
 
     public String getNombre() {
@@ -37,24 +48,23 @@ public class Persona {
         return fechaNacimiento;
     }
 
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
+    }
+
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", email='" + email + '\'' +
-                ", fechaNacimiento=" + fechaNacimiento +
-                '}';
+        return "Nombre: " + nombre +
+                ", Apellido: " + apellido +
+                ", Email: " + email +
+                ", Fecha de nacimiento: " + fechaNacimiento;
     }
 
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public static class Builder{
-        private String nombre;
-        private String apellido;
-        private String email;
-        private LocalDate fechaNacimiento;
     }
 }
