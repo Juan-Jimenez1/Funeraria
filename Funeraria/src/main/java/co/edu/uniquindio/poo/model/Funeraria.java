@@ -51,7 +51,7 @@ public class Funeraria {
         for(Empleado empleado : listEmpleados) {
             if(empleado.getIdentificacion().equalsIgnoreCase(identificacion)){
                 listEmpleados.remove(empleado);
-                System.out.println("Cliente eliminado exitosamente");
+                System.out.println("Empleado eliminado exitosamente");
                 break;
             }
         }
@@ -61,7 +61,7 @@ public class Funeraria {
         for(int i=0;i<listEmpleados.size();i++){
             if(listEmpleados.get(i).getIdentificacion().equalsIgnoreCase(identificacion)){
                 listEmpleados.set(i, empleado);
-                System.out.println("Cliente actualizado con exito");
+                System.out.println("Empleado actualizado con exito");
                 return true;
             }
         }

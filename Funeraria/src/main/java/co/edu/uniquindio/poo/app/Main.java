@@ -13,6 +13,7 @@ public class Main {
 
         int opcion;
         do {
+            System.out.println("------------------------------------");
             System.out.println("\n===== MENU FUNERARIA =====");
             System.out.println("1. Registrar cliente");
             System.out.println("2. Eliminar cliente");
@@ -27,6 +28,7 @@ public class Main {
             System.out.println("11. Pagar deuda");
             System.out.println("12. Mostrar deuda");
             System.out.println("0. Salir");
+            System.out.println("------------------------------------");
             System.out.print("Opción: ");
             opcion = sc.nextInt();
             sc.nextLine();
@@ -81,14 +83,14 @@ public class Main {
                     System.out.print("Día nacimiento: ");
                     int diaNuevo = sc.nextInt();
                     sc.nextLine();
-
+                    Cliente clienteExistente= funeraria.buscarCliente(idActualizar);
                     Cliente clienteAct = new Cliente.Builder()
                             .nombre(nuevoNombre)
                             .apellido(nuevoApellido)
                             .identificacion(idActualizar)
                             .email(nuevoMail)
                             .fechaNacimiento(LocalDate.of(anioNuevo, mesNuevo, diaNuevo))
-                            .deuda(0)
+                            .deuda(clienteExistente.getValorPendiente())
                             .build();
 
                     if (funeraria.actualizarCliente(idActualizar, clienteAct)) {
@@ -191,7 +193,7 @@ public class Main {
                 case 6:
                     System.out.print("Identificación empleado: ");
                     String idEmpEliminar = sc.nextLine();
-                    if(!funeraria.clienteExiste(idEmpEliminar)){
+                    if(!funeraria.empleadoExiste(idEmpEliminar)){
                         System.out.println("Empleado no encontrado.");
                         break;
                     }
@@ -260,6 +262,7 @@ public class Main {
                     }else{
                         System.out.println("Cliente no encontrado.");
                     }
+                    break;
 
                 case 0:
                     System.out.println("Saliendo del sistema...");

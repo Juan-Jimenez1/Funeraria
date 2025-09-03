@@ -49,8 +49,10 @@ public class AdquirirServicio {
     @Override
     public String toString() {
         return "Servicio adquirido{" +
-                "cliente=" + cliente +
-                ", servicio=" + servicio +
+                "Nombre cliente=" + cliente.getNombre() +
+                ", Identificacion=" + cliente.getIdentificacion() +
+                ", servicio=" + servicio.getTipoServicio() +
+                ", Valor servicio"+ servicio.getPrecio()+
                 ", fechaAdquisicion=" + fechaAdquisicion +
                 '}';
     }
