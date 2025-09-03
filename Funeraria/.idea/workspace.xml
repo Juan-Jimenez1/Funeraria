@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df882719-e6b8-46c5-9c87-644800da8003" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/model/Funeraria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/poo/model/Funeraria.java" afterDir="false" />
-    </list>
+    <list default="true" id="df882719-e6b8-46c5-9c87-644800da8003" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +74,7 @@
       <workItem from="1756774003990" duration="6891000" />
       <workItem from="1756824561564" duration="2863000" />
       <workItem from="1756862510334" duration="37000" />
-      <workItem from="1756865956063" duration="7681000" />
+      <workItem from="1756865956063" duration="7984000" />
     </task>
     <task id="LOCAL-00001" summary="Se cambia el nombre de la clase para expresar mejor claridad">
       <option name="closed" value="true" />
