@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df882719-e6b8-46c5-9c87-644800da8003" name="Changes" comment="" />
+    <list default="true" id="df882719-e6b8-46c5-9c87-644800da8003" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +77,8 @@
       <workItem from="1756824561564" duration="2863000" />
       <workItem from="1756862510334" duration="37000" />
       <workItem from="1756865956063" duration="7984000" />
+      <workItem from="1756874688286" duration="424000" />
+      <workItem from="1756901374543" duration="492000" />
     </task>
     <task id="LOCAL-00001" summary="Se cambia el nombre de la clase para expresar mejor claridad">
       <option name="closed" value="true" />
@@ -96,12 +100,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
