@@ -18,7 +18,7 @@ public class Funeraria {
         this.listClientes= new ArrayList<>();
         this.listServiciosAdquiridos= new ArrayList<>();
     }
-    //Singleton method
+
     public static Funeraria getInstance() {
         if (funeraria == null) {
             funeraria = new Funeraria();

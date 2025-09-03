@@ -11,7 +11,7 @@ public class Servicio {
         this.precio = precio;
     }
 
-    // ---------- FACTORY ----------
+
     public static class ServicioFactory {
         public static Servicio crearServicio(int opcion) {
             switch (opcion) {

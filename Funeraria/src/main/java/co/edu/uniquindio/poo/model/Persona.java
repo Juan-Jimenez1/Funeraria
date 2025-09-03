@@ -9,7 +9,7 @@ public class Persona {
     private String email;
     private LocalDate fechaNacimiento;
 
-     //Protected para poder acceder al constructor desde las clases hijas.
+
     protected Persona(String nombre, String apellido, String identificacion, String email, LocalDate fechaNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;

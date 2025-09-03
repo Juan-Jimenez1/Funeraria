@@ -25,7 +25,7 @@ public class Empleado extends Persona {
         this.salario = salario;
     }
 
-    //Builder method
+
     public static class Builder {
         private String nombre;
         private String apellido;

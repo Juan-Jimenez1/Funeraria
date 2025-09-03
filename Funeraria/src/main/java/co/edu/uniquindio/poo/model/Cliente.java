@@ -27,7 +27,6 @@ public class Cliente extends Persona {
 
 
 
-    /// Builder method
     public static class Builder{
         private String nombre;
         private String apellido;
@@ -75,8 +74,6 @@ public class Cliente extends Persona {
         }
     }
 
-      //Cuando el usuario adquiere un servicio se le asigna un valor a pagar
-      //Este metodo sirve para pagar esa deuda
     public void pagarDeuda(double pago){
 
         if(valorPendiente==0){
