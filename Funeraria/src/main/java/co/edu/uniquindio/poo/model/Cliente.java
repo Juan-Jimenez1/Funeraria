@@ -20,6 +20,7 @@ public class Cliente extends Persona {
         this.estaVivo = true;
         this.valorPendiente = builder.deuda;
         this.serviciosAdquiridos= new ArrayList<>();
+        this.debeDinero = false;
 
     }
 
@@ -77,16 +78,30 @@ public class Cliente extends Persona {
       //Cuando el usuario adquiere un servicio se le asigna un valor a pagar
       //Este metodo sirve para pagar esa deuda
     public void pagarDeuda(double pago){
-        if(valorPendiente >=pago){
-            valorPendiente = valorPendiente - pago;
-            debeDinero=true;
-        }else{
-            System.out.println("El pago es mayor a la deuda");
-        }
 
         if(valorPendiente==0){
             debeDinero = false;
             System.out.println("El usuario no debe dinero");
+            return;
+        }
+
+        if(valorPendiente >=pago){
+            valorPendiente = valorPendiente - pago;
+            System.out.println("El usuario tiene un valor restante a pagar de: "+valorPendiente);
+        }else{
+            System.out.println("El pago es mayor a la deuda");
+        }
+
+
+    }
+
+    public void mostrarValorPendiente(){
+        System.out.println("El usuario tiene un valor pendiente a pagar de:"+valorPendiente);
+    }
+
+    public void mostrarServiciosAdquiridos(){
+        for(AdquirirServicio servicio:serviciosAdquiridos){
+            System.out.println(servicio);
         }
     }
 
@@ -111,5 +126,26 @@ public class Cliente extends Persona {
     public void setValorPendiente(double valorPendiente) {
         this.valorPendiente = valorPendiente;
     }
+
+    public List<AdquirirServicio> getServiciosAdquiridos() {
+        return serviciosAdquiridos;
+    }
+
+    public void setServiciosAdquiridos(List<AdquirirServicio> serviciosAdquiridos) {
+        this.serviciosAdquiridos = serviciosAdquiridos;
+    }
+
+    public boolean isEstaVivo() {
+        return estaVivo;
+    }
+
+    public boolean isDebeDinero() {
+        return debeDinero;
+    }
+
+    public void setDebeDinero(boolean debeDinero) {
+        this.debeDinero = debeDinero;
+    }
+
 
 }

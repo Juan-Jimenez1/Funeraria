@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class AdquirirServicio {
     private Cliente cliente;
     private  Servicio servicio;
-    private LocalDate fecchaAdquisicion;
+    private LocalDate fechaAdquisicion;
 
 
     public AdquirirServicio(Cliente cliente, Servicio servicio) {
@@ -14,9 +14,10 @@ public class AdquirirServicio {
 
         this.cliente = cliente;
         this.servicio = servicio;
-        this.fecchaAdquisicion = LocalDate.now();
+        this.fechaAdquisicion = LocalDate.now();
 
         cliente.setValorPendiente(cliente.getValorPendiente() + servicio.getPrecio());
+        cliente.setDebeDinero(true);
         cliente.agregarServiciosAdquiridosPorElUsuario(this);
     }
 
@@ -28,16 +29,16 @@ public class AdquirirServicio {
         this.cliente = cliente;
     }
 
-    public LocalDate getFecchaAdquisicion() {
-        return fecchaAdquisicion;
+    public LocalDate getFechaAdquisicion() {
+        return fechaAdquisicion;
     }
 
     public void setServicio(Servicio servicio) {
         this.servicio = servicio;
     }
 
-    public void setFecchaAdquisicion(LocalDate fecchaAdquisicion) {
-        this.fecchaAdquisicion = fecchaAdquisicion;
+    public void setFechaAdquisicion(LocalDate fechaAdquisicion) {
+        this.fechaAdquisicion = fechaAdquisicion;
     }
 
     public Servicio getServicio() {
@@ -47,10 +48,10 @@ public class AdquirirServicio {
 
     @Override
     public String toString() {
-        return "Servicio{" +
+        return "Servicio adquirido{" +
                 "cliente=" + cliente +
                 ", servicio=" + servicio +
-                ", fecchaAdquisicion=" + fecchaAdquisicion +
+                ", fechaAdquisicion=" + fechaAdquisicion +
                 '}';
     }
 }

@@ -31,7 +31,7 @@ public class Empleado extends Persona {
         private String apellido;
         private String identificacion;
         private String email;
-        private LocalDate fechaNacimiento;;
+        private LocalDate fechaNacimiento;
         private TipoCargo cargo;
         private double salario;
 
@@ -69,6 +69,8 @@ public class Empleado extends Persona {
             return new Empleado(this);
         }
     }
+
+
 
     @Override
     public String toString() {

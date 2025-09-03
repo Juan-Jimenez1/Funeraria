@@ -35,6 +35,14 @@ public class Servicio {
         return tipoServicio;
     }
 
+    public void setTipoServicio(TipoServicio tipoServicio) {
+        this.tipoServicio = tipoServicio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
         return "Servicio{" +

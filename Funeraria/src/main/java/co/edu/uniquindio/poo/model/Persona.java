@@ -60,6 +60,7 @@ public class Persona {
     public String toString() {
         return "Nombre: " + nombre +
                 ", Apellido: " + apellido +
+                ", Identificación: " + identificacion +
                 ", Email: " + email +
                 ", Fecha de nacimiento: " + fechaNacimiento;
     }
